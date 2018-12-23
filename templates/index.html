@@ -6,8 +6,8 @@
    </head>
 	
    <body>
-      <form >
-         Your text : <input type = "text" name = "your_text" />
+      <form action="{{ url_for('handle_data') }}" method="post">
+         Your text : <input type = "text" name = "inputText"/>
          <br>
          <input type="submit" value="Submit">
       </form>
